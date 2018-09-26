@@ -1,0 +1,1 @@
+print("This is the code for the waste tracking program")

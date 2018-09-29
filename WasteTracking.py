@@ -1,6 +1,6 @@
 import gspread
 import datetime
-from tkinter import *
+import tkinter as tk
 from oauth2client.service_account import ServiceAccountCredentials
 
 
@@ -24,18 +24,18 @@ def submitdata():
 
 
 # TKinter code
-root = Tk()  # main window
+root = tk.Tk()  # main window
 
-label1 = Label(root,text="Date")
-label2 = Label(root,text="Item")
-label3 = Label(root,text="Source")
+label1 = tk.Label(root,text="Date")
+label2 = tk.Label(root,text="Item")
+label3 = tk.Label(root,text="Source")
 
-entry1 = Entry(root,bg="white",fg="blue")
+entry1 = tk.Entry(root,bg="white",fg="blue")
 entry1.insert(0,date)
-entry2 = Entry(root,bg="white",fg="blue")
-entry3 = Entry(root,bg="white",fg="blue")
+entry2 = tk.Entry(root,bg="white",fg="blue")
+entry3 = tk.Entry(root,bg="white",fg="blue")
 
-button1=Button(root,text="Submit data",command=submitdata)
+button1=tk.Button(root,text="Submit data",command=submitdata)
 
 label1.grid(row=0)
 entry1.grid(row=0,column=1)
@@ -50,9 +50,5 @@ button1.grid(row=6,column=1)
 
 root.mainloop()  # display window on screen
 
-
-
-
-
-
+input("Press any button to continue...")
 

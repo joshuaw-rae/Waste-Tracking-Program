@@ -49,6 +49,3 @@ entry3.grid(row=4,column=1)
 button1.grid(row=6,column=1)
 
 root.mainloop()  # display window on screen
-
-input("Press any button to continue...")
-

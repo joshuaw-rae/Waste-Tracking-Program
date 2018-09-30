@@ -25,7 +25,7 @@ def submitdata():
 
 # TKinter code
 root = tk.Tk()  # main window
-
+root.title("Waste Tracking Applet")
 label1 = tk.Label(root,text="Date")
 label2 = tk.Label(root,text="Item")
 label3 = tk.Label(root,text="Source")

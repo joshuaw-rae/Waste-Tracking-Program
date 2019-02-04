@@ -1,2 +1,4 @@
 
 client_secret.json
+*.xml
+.idea/workspace.xml
